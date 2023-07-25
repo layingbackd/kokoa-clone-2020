@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcom to kokoa talk</title>
+  <style>
+        @keyframes load {
+     form{opacity: 1;}
+     to{
+       will-change: transform ;
+       opacity: 0;
+       visibility: hidden;
+     }
+    }
+
+    .loading{
+      background-color: var(--yellow);
+      width: 100vw;
+      height: 100vh;
+      animation: load 0.4s ease-in-out forwards;
+      animation-delay: 2s;
+    }
+
+  </style>¬ø
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>NoService</span>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <!--Battery Icon -->
+      <!--Lightning Icon -->
+    </div>
+
+  </div>
+  
+  <header class="welcome-header">
+    <h1 class="welcome-header_title">Welcome to Kokoa clone</h1>
+    <p class="welcome-header_text">If u have a Kokoa Account, log in with your Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+  </header>
+  <form class="login-form" action="friends.html" method="get">
+    <input name="username" type="text" placeholder="Email or ph-num">
+    <input name="password" type="password" placeholder="Password">
+    <input type="submit" value="Log in">
+    <a href="#">Find kakao Account or Password</a>
+  </form>
+<div class="loading" style="background-color: var(--yellow);">
+
+</div>
+ 
+</body>
+</html>
